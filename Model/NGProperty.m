@@ -56,10 +56,18 @@
 }
 
 - (id)valueOnObject:(NSObject *)object {
-    return [object performSelector:self.getter];
+    if (self.isClass) {
+        return [object performSelector:self.getter];
+    } else {
+        [object valueForKey:self.name];
+    }
 }
 - (void)setValue:(id)newValue forObject:(NSObject *)object {
-    [object performSelector:self.setter withObject:newValue];
+    if (self.isClass) {
+        [object performSelector:self.setter withObject:newValue];
+    } else {
+        [object setValue:newValue forKey:self.name];
+    }
 }
 
 - (BOOL)isClass {
