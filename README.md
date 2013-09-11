@@ -12,5 +12,3 @@ Features Supported By NGModel
 [Validation Documentation](https://github.com/tspop/NGModel/blob/master/Validation.md)
 ##Copying / Hashing
 Copying and hashing methods are automatically generated for you.
-
-##Mantle vs. NGModel
