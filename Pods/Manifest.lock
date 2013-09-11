@@ -1,0 +1,10 @@
+PODS:
+  - MAObjCRuntime (0.0.1)
+
+DEPENDENCIES:
+  - MAObjCRuntime (~> 0.0.1)
+
+SPEC CHECKSUMS:
+  MAObjCRuntime: 284004079156d10cb8237bc3ffcfa3a0e1a0af22
+
+COCOAPODS: 0.19.1
