@@ -15,5 +15,6 @@
 
 + (id)create:(id)data;
 + (id)createFromDictionary:(NSDictionary *)dictionary;
++ (void)setDateFormatter:(NSDateFormatter *)dateFormatter forProperty:(NSString *)property;
 
 @end

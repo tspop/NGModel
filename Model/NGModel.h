@@ -10,6 +10,8 @@
 
 @interface NGModel : NSObject
 
+- (NSString *)className;
++ (NSString *)className;
 
 @end
 

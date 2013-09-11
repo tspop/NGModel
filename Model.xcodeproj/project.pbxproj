@@ -41,6 +41,10 @@
 		12D7380D17D5E32D002B49C8 /* NGModel+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D7380C17D5E32D002B49C8 /* NGModel+Validations.m */; };
 		12D7380E17D5E33A002B49C8 /* NGModel+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D7380C17D5E32D002B49C8 /* NGModel+Validations.m */; };
 		12D7380F17D5E33C002B49C8 /* NGModel+Serialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D7380917D5E320002B49C8 /* NGModel+Serialization.m */; };
+		A1D51A5617E06FCC00D54944 /* SerializationObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A5517E06FCC00D54944 /* SerializationObject.m */; };
+		A1D51A5717E06FCC00D54944 /* SerializationObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A5517E06FCC00D54944 /* SerializationObject.m */; };
+		A1D51A5A17E0749400D54944 /* NGModel+Instantation.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A5917E0749400D54944 /* NGModel+Instantation.m */; };
+		A1D51A5B17E0749400D54944 /* NGModel+Instantation.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A5917E0749400D54944 /* NGModel+Instantation.m */; };
 		F0CB4C7F9F2243738A0908D9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBFFAD4B44664F2EBE146322 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +102,10 @@
 		12D7380917D5E320002B49C8 /* NGModel+Serialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NGModel+Serialization.m"; sourceTree = "<group>"; };
 		12D7380B17D5E32C002B49C8 /* NGModel+Validations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NGModel+Validations.h"; sourceTree = "<group>"; };
 		12D7380C17D5E32D002B49C8 /* NGModel+Validations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NGModel+Validations.m"; sourceTree = "<group>"; };
+		A1D51A5417E06FCC00D54944 /* SerializationObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SerializationObject.h; sourceTree = "<group>"; };
+		A1D51A5517E06FCC00D54944 /* SerializationObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SerializationObject.m; sourceTree = "<group>"; };
+		A1D51A5817E0749400D54944 /* NGModel+Instantation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NGModel+Instantation.h"; sourceTree = "<group>"; };
+		A1D51A5917E0749400D54944 /* NGModel+Instantation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NGModel+Instantation.m"; sourceTree = "<group>"; };
 		DBFFAD4B44664F2EBE146322 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -167,6 +175,8 @@
 			children = (
 				12191DB517DF3EDE000C3F40 /* Student.h */,
 				12191DB617DF3EDE000C3F40 /* Student.m */,
+				A1D51A5417E06FCC00D54944 /* SerializationObject.h */,
+				A1D51A5517E06FCC00D54944 /* SerializationObject.m */,
 			);
 			name = TestModels;
 			sourceTree = "<group>";
@@ -277,6 +287,8 @@
 		125A055F17D5E7B800586AD8 /* Instantiation */ = {
 			isa = PBXGroup;
 			children = (
+				A1D51A5817E0749400D54944 /* NGModel+Instantation.h */,
+				A1D51A5917E0749400D54944 /* NGModel+Instantation.m */,
 			);
 			name = Instantiation;
 			sourceTree = "<group>";
@@ -454,12 +466,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1235F06217C666C3009FD2E9 /* main.m in Sources */,
+				A1D51A5617E06FCC00D54944 /* SerializationObject.m in Sources */,
 				1235F06617C666C3009FD2E9 /* NGAppDelegate.m in Sources */,
 				1235F06F17C666C3009FD2E9 /* NGViewController.m in Sources */,
 				1235F09617C666F8009FD2E9 /* NGModel.m in Sources */,
 				12D7380A17D5E320002B49C8 /* NGModel+Serialization.m in Sources */,
 				12D7380D17D5E32D002B49C8 /* NGModel+Validations.m in Sources */,
 				12191DA217DF377F000C3F40 /* NGBaseValidation.m in Sources */,
+				A1D51A5A17E0749400D54944 /* NGModel+Instantation.m in Sources */,
 				12191DA817DF378F000C3F40 /* NGRegexValidation.m in Sources */,
 				12191DAA17DF378F000C3F40 /* NGRequiredValidation.m in Sources */,
 				12191DB217DF3B35000C3F40 /* NGBlockValidation.m in Sources */,
@@ -480,6 +494,8 @@
 				12191DA317DF377F000C3F40 /* NGBaseValidation.m in Sources */,
 				12191DA917DF378F000C3F40 /* NGRegexValidation.m in Sources */,
 				12191DAB17DF378F000C3F40 /* NGRequiredValidation.m in Sources */,
+				A1D51A5717E06FCC00D54944 /* SerializationObject.m in Sources */,
+				A1D51A5B17E0749400D54944 /* NGModel+Instantation.m in Sources */,
 				12191DB317DF3B35000C3F40 /* NGBlockValidation.m in Sources */,
 				12191DB717DF3EDE000C3F40 /* Student.m in Sources */,
 			);

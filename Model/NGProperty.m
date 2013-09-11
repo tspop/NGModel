@@ -25,10 +25,9 @@
     if ([type characterAtIndex:0] == '@') {
         // Class Type
         result.type = [type substringWithRange:NSMakeRange(2, type.length - 3)];
+
     } else {
-        static NSArray *integerTypes = @[@"i",@"I",@"c"];
-        // Primitive Type
-        NSLog(@"%@",type);
+        result.type = type;
     }
         
     return result;

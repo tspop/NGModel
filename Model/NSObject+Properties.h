@@ -11,5 +11,8 @@
 @interface NSObject(Properties)
 
 - (NSArray *)properties;
+- (NSArray *)propertiesCached:(BOOL)cached;
++ (NSArray *)properties;
++ (NSArray *)propertiesCached:(BOOL)cached;
 
 @end
