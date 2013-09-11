@@ -17,3 +17,4 @@
 
 #import "NGModel+Serialization.h"
 #import "NGModel+Validations.h"
+#import "NGModel+Instantation.h"

@@ -10,6 +10,6 @@
 
 @interface NGModel(Instantation)
 
-+ (NGModel *)randomInstance;
++ (instancetype)randomInstance;
 
 @end

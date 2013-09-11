@@ -18,4 +18,8 @@
     return NSStringFromClass(self);
 }
 
+- (NSString *)description {
+    return [NSString stringWithFormat:@"%p: %@",self,[self serialize]];
+}
+
 @end

@@ -13,7 +13,11 @@
 
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *type;
+@property (strong, nonatomic) Class typeClass;
 
 + (NGProperty *)createWithObjCProperty:(objc_property_t)property;
+- (id)valueOnObject:(NSObject *)object;
+- (void)setValue:(id)newValue forObject:(NSObject *)object;
+- (BOOL)isClass;
 
 @end

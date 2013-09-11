@@ -7,13 +7,19 @@
 //
 
 #import "NGProperty.h"
+#import "NGModel+Helpers.h"
+
+@interface NGProperty()
+@property SEL setter;
+@property SEL getter;
+@end
 
 @implementation NGProperty
 
-+ (NGProperty *)createWithObjCProperty:(objc_property_t)property {
-    NGProperty *result = [NGProperty new];
+- (id)initWithObjCProperty:(objc_property_t)property {
+    self = [super init];
     
-    result.name = [NSString stringWithUTF8String: property_getName(property)];
+    self.name = [NSString stringWithUTF8String: property_getName(property)];
     
     NSArray *attrPairs = [[NSString stringWithUTF8String: property_getAttributes(property)] componentsSeparatedByString: @","];
     NSMutableDictionary *attributes = [[NSMutableDictionary alloc] initWithCapacity:[attrPairs count]];
@@ -24,17 +30,40 @@
     NSString *type = attributes[@"T"];
     if ([type characterAtIndex:0] == '@') {
         // Class Type
-        result.type = [type substringWithRange:NSMakeRange(2, type.length - 3)];
+        self.type = [type substringWithRange:NSMakeRange(2, type.length - 3)];
+        self.typeClass = NSClassFromString(self.type);
 
-    } else {
-        result.type = type;
-    }
+        NSSelectorFromString(self.name);
         
-    return result;
+        self.getter = NSSelectorFromString(self.name);
+        
+        NSString *setterString = [NSString stringWithFormat:@"set%@:",[self.name capitalizedFirstLetter]];
+        
+        self.setter = NSSelectorFromString(setterString);
+    } else {
+        self.type = type;
+    }
+    
+    return self;
+}
+
++ (NGProperty *)createWithObjCProperty:(objc_property_t)property {
+    return [[NGProperty alloc] initWithObjCProperty:property];
 }
 
 - (NSString *)description {
     return [NSString stringWithFormat:@"%@ %@",self.type,self.name];
+}
+
+- (id)valueOnObject:(NSObject *)object {
+    return [object performSelector:self.getter];
+}
+- (void)setValue:(id)newValue forObject:(NSObject *)object {
+    [object performSelector:self.setter withObject:newValue];
+}
+
+- (BOOL)isClass {
+    return self.typeClass != nil;
 }
 
 @end

@@ -8,7 +8,7 @@
 
 #import "NGViewController.h"
 #import "Student.h"
-#import "NSObject+Properties.h"
+#import "SerializationObject.h"
 
 @interface NGViewController ()
 
@@ -19,9 +19,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    Student *student = [Student new];
-    NSLog(@"%@",student.properties);
-
+    SerializationObject *object = [SerializationObject randomInstance];
+    NSLog(@"%@",object);
 }
 
 - (void)didReceiveMemoryWarning

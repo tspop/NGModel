@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NGProperty.h"
 
 @interface NSObject(Properties)
 
