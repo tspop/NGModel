@@ -59,14 +59,18 @@
     if (self.isClass) {
         return [object performSelector:self.getter];
     } else {
-        [object valueForKey:self.name];
+        return [object valueForKey:self.name];
     }
 }
 - (void)setValue:(id)newValue forObject:(NSObject *)object {
     if (self.isClass) {
         [object performSelector:self.setter withObject:newValue];
     } else {
-        [object setValue:newValue forKey:self.name];
+        if (newValue != nil) {
+            [object setValue:newValue forKey:self.name];
+        } else {
+            [object setValue:@(0) forKey:self.name];
+        }
     }
 }
 

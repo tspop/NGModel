@@ -22,4 +22,8 @@
     return [NSString stringWithFormat:@"%p: %@",self,[self serialize]];
 }
 
++ (NSString *)pluralizedName {
+    return [NSStringFromClass(self) stringByAppendingString:@"s"];
+}
+
 @end

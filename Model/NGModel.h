@@ -12,6 +12,7 @@
 
 - (NSString *)className;
 + (NSString *)className;
++ (NSString *)pluralizedName;
 
 @end
 

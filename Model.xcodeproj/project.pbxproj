@@ -50,6 +50,8 @@
 		A1D51A6417E07C4F00D54944 /* NGModel+Caching.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A6317E07C4F00D54944 /* NGModel+Caching.m */; };
 		A1D51A6517E07C4F00D54944 /* NGModel+Caching.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A6317E07C4F00D54944 /* NGModel+Caching.m */; };
 		A1D51A6917E08A6100D54944 /* NGModel+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A6817E08A6100D54944 /* NGModel+Helpers.m */; };
+		A1D51A6C17E09F2300D54944 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A6B17E09F2300D54944 /* Human.m */; };
+		A1D51A6D17E09F2300D54944 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A6B17E09F2300D54944 /* Human.m */; };
 		F0CB4C7F9F2243738A0908D9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBFFAD4B44664F2EBE146322 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -117,6 +119,8 @@
 		A1D51A6317E07C4F00D54944 /* NGModel+Caching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NGModel+Caching.m"; sourceTree = "<group>"; };
 		A1D51A6717E08A6100D54944 /* NGModel+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NGModel+Helpers.h"; sourceTree = "<group>"; };
 		A1D51A6817E08A6100D54944 /* NGModel+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NGModel+Helpers.m"; sourceTree = "<group>"; };
+		A1D51A6A17E09F2300D54944 /* Human.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
+		A1D51A6B17E09F2300D54944 /* Human.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
 		DBFFAD4B44664F2EBE146322 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -188,6 +192,8 @@
 				12191DB617DF3EDE000C3F40 /* Student.m */,
 				A1D51A5417E06FCC00D54944 /* SerializationObject.h */,
 				A1D51A5517E06FCC00D54944 /* SerializationObject.m */,
+				A1D51A6A17E09F2300D54944 /* Human.h */,
+				A1D51A6B17E09F2300D54944 /* Human.m */,
 			);
 			name = TestModels;
 			sourceTree = "<group>";
@@ -507,6 +513,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1D51A6917E08A6100D54944 /* NGModel+Helpers.m in Sources */,
+				A1D51A6C17E09F2300D54944 /* Human.m in Sources */,
 				A1D51A6417E07C4F00D54944 /* NGModel+Caching.m in Sources */,
 				1235F06217C666C3009FD2E9 /* main.m in Sources */,
 				A1D51A5617E06FCC00D54944 /* SerializationObject.m in Sources */,
@@ -538,6 +545,7 @@
 				12191DA317DF377F000C3F40 /* NGBaseValidation.m in Sources */,
 				A1D51A6517E07C4F00D54944 /* NGModel+Caching.m in Sources */,
 				12191DA917DF378F000C3F40 /* NGRegexValidation.m in Sources */,
+				A1D51A6D17E09F2300D54944 /* Human.m in Sources */,
 				12191DAB17DF378F000C3F40 /* NGRequiredValidation.m in Sources */,
 				A1D51A5717E06FCC00D54944 /* SerializationObject.m in Sources */,
 				A1D51A5B17E0749400D54944 /* NGModel+Instantation.m in Sources */,

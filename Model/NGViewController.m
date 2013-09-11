@@ -9,6 +9,7 @@
 #import "NGViewController.h"
 #import "Student.h"
 #import "SerializationObject.h"
+#import "Human.h"
 
 @interface NGViewController ()
 
@@ -19,8 +20,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    SerializationObject *object = [SerializationObject randomInstance];
+    
+    Human *object = [Human randomInstance];
     NSLog(@"%@",object);
+    NSMutableDictionary *humanDictionary = [object serialize];
+    
+//    [humanDictionary removeObjectForKey:@"id"];
+    
+    NSLog(@"%@",[Human createFromDictionary:humanDictionary]);
 }
 
 - (void)didReceiveMemoryWarning
