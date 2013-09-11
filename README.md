@@ -4,10 +4,10 @@ NGModel (New Generation Model) is a convention over configuration model framewor
 
 Features Supported By NGModel
 
-Serialization
-Instantiation
-Validation
-Copying / Hashing
-Copying and hashing methods are automatically generated for you.
++Serialization
++Instantiation
++Validation
++Copying / Hashing
+++Copying and hashing methods are automatically generated for you.
 
 Mantle vs. NGModel
