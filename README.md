@@ -5,10 +5,12 @@ NGModel (New Generation Model) is a convention over configuration model framewor
 Features Supported By NGModel
 
 ##Serialization
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+[Serialization Documentation](https://github.com/tspop/NGModel/blob/master/Serialization.md)
 ##Instantiation
+[Instantiation Documentation](https://github.com/tspop/NGModel/blob/master/Instantiation.md)
 ##Validation
+[Validation Documentation](https://github.com/tspop/NGModel/blob/master/Validation.md)
 ##Copying / Hashing
-####Copying and hashing methods are automatically generated for you.
+Copying and hashing methods are automatically generated for you.
 
-Mantle vs. NGModel
+##Mantle vs. NGModel
