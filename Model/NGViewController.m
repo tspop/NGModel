@@ -23,17 +23,11 @@
     
     Human *object = [Human randomInstance];
     NSLog(@"%@",object);
-    NSMutableDictionary *humanDictionary = [object serialize];
+//    NSMutableDictionary *humanDictionary = [object serialize];
     
 //    [humanDictionary removeObjectForKey:@"id"];
     
-    NSLog(@"%@",[Human createFromDictionary:humanDictionary]);
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+//    NSLog(@"%@",[Human createFromDictionary:humanDictionary]);
 }
 
 @end

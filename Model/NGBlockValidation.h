@@ -8,6 +8,12 @@
 
 #import "NGBaseValidation.h"
 
+typedef BOOL (^NGValidationBlock)(id);
+
 @interface NGBlockValidation : NGBaseValidation
+
+@property (copy, nonatomic) NGValidationBlock validationBlock;
+
++ (instancetype)createWithValidationBlock:(NGValidationBlock)validationBlock;
 
 @end

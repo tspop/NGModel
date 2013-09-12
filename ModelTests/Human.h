@@ -13,7 +13,7 @@
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *address;
 @property (strong, nonatomic) NSNumber *money;
-@property (strong, nonatomic) NSString *petsName;
+@property (strong, nonatomic) NSArray *pets;
 @property (strong, nonatomic) NSArray *hobbies;
 @property (strong, nonatomic) NSNumber *age;
 @property int id;

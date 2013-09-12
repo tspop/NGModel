@@ -10,7 +10,6 @@
 
 @interface NGRegexValidation : NGBaseValidation
 
-@property (strong, nonatomic) NSString *property;
 @property (strong, nonatomic) NSString *regex;
 
 + (instancetype)createWithProperty:(NSString *)property andRegex:(NSString *)regex;

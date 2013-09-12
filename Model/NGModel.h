@@ -13,6 +13,7 @@
 - (NSString *)className;
 + (NSString *)className;
 + (NSString *)pluralizedName;
+- (NSString *)descriptionString;
 
 @end
 

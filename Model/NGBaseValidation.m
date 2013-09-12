@@ -14,4 +14,20 @@
     return YES;
 }
 
+- (BOOL)isInvalid:(NGModel *)model {
+    return ![self isValid:model];
+}
+
+- (NSString *)errorMessage {
+    if (_errorMessage == nil) {
+        return [self defaultErrorMessage];
+    } else {
+        return _errorMessage;
+    }
+}
+
+- (NSString *)defaultErrorMessage {
+    return [NSString stringWithFormat:@"%@ has an error.",self.property];
+}
+
 @end

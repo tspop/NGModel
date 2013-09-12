@@ -28,4 +28,8 @@
     return value != nil;
 }
 
+- (NSString *)defaultErrorMessage {
+    return [NSString stringWithFormat:@"%@ is required.",self.property];
+}
+
 @end

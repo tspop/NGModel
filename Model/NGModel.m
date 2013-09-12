@@ -7,6 +7,7 @@
 //
 
 #import "NGModel.h"
+#import "NSObject+Properties.h"
 
 @implementation NGModel
 
@@ -24,6 +25,26 @@
 
 + (NSString *)pluralizedName {
     return [NSStringFromClass(self) stringByAppendingString:@"s"];
+}
+
+- (NSUInteger)hash {
+    NSUInteger result = 0;
+    for (NGProperty *property in self.properties) {
+        result ^= [[property valueOnObject:self] hash];
+    }
+    return result;
+}
+
+- (BOOL)isEqual:(id)object {
+    if ([object class] != self.class) {
+        return NO;
+    }
+    for (NGProperty *property in self.properties) {
+        if (![[property valueOnObject:self] isEqual:[property valueOnObject:object]]) {
+            return NO;
+        }
+    }
+    return YES;
 }
 
 @end

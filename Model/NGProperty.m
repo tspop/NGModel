@@ -28,12 +28,11 @@
     }
     
     NSString *type = attributes[@"T"];
+
     if ([type characterAtIndex:0] == '@') {
         // Class Type
         self.type = [type substringWithRange:NSMakeRange(2, type.length - 3)];
         self.typeClass = NSClassFromString(self.type);
-
-        NSSelectorFromString(self.name);
         
         self.getter = NSSelectorFromString(self.name);
         
@@ -68,8 +67,6 @@
     } else {
         if (newValue != nil) {
             [object setValue:newValue forKey:self.name];
-        } else {
-            [object setValue:@(0) forKey:self.name];
         }
     }
 }

@@ -10,8 +10,6 @@
 
 @interface NGRequiredValidation : NGBaseValidation
 
-@property (strong, nonatomic) NSString *property;
-
 + (instancetype)createWithProperty:(NSString *)property;
 
 @end
