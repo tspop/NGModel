@@ -1,10 +1,15 @@
 PODS:
   - MAObjCRuntime (0.0.1)
+  - PlaceKit (1.0.0):
+    - PlaceKit/Core
+  - PlaceKit/Core (1.0.0)
 
 DEPENDENCIES:
   - MAObjCRuntime (~> 0.0.1)
+  - PlaceKit (~> 1.0.0)
 
 SPEC CHECKSUMS:
   MAObjCRuntime: 284004079156d10cb8237bc3ffcfa3a0e1a0af22
+  PlaceKit: 3aba4078db5c8b62af352fec96d81119b40f1e6d
 
 COCOAPODS: 0.19.1
