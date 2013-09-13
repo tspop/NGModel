@@ -12,8 +12,25 @@
 
 @implementation NGModel(Instantation)
 
-+ (void)generateProperty:(NGProperty *)property forModel:(NGModel *)model {
-        
++ (int)recursionDepth {
+    return 0;
+}
+
++ (BOOL)stackExceedRecursionLimit:(NSArray *)stack {
+    int numberOfAppearances = 0;
+    for (Class class in stack) {
+        if ([self.class isSubclassOfClass:class]) {
+            numberOfAppearances++;
+        }
+        if (numberOfAppearances > [self recursionDepth]) {
+            return YES;
+        }
+    }
+    return NO;
+}
+
++ (void)generateProperty:(NGProperty *)property forModel:(NGModel *)model withStack:(NSMutableArray *)stack {
+    
     NSArray *arr = @[@"insurable",@"grapiest",@"nonclassicality",@"obstruct",@"loneliest",@"untearable",@"adequateness",@"nondependency",@"apologetical",@"shortcut",@"counterboring",@"conductible",@"despotically",@"sublittoral",@"neil",@"countersalient",@"unpalatable",@"calefactive",@"canarese",@"rcs",@"ridiculousness",@"nonnephritic",@"piggeries",@"caning",@"unpendulous",@"montcalm",@"consolidating",@"diazotizability",@"correctitude",@"volcanise",@"granulomatosis",@"berserk",@"influent",@"builded",@"telencephalon",@"paniculately",@"droughtiness",@"galvanoplastically",@"alphabetising",@"ephebeion",@"swordfish",@"togliatti",@"pododynia",@"tucana",@"resilient",@"emulsoid",@"outfeeding",@"fervidity",@"minutia",@"rosewood"];
     
     if ([property.typeClass isSubclassOfClass:NSString.class]) {
@@ -35,7 +52,15 @@
             if (objectClass == nil) {
                 [value addObject:arr[rand() % 50]];
             } else {
-                [value addObject:[objectClass randomInstance]];
+                if ([objectClass stackExceedRecursionLimit:stack]) {
+                    return;
+                }
+                
+                NGModel *model = [objectClass randomInstanceWithStack:stack];
+                if (model == nil) {
+                    return;
+                }
+                [value addObject:model];
             }
 
         }
@@ -44,7 +69,11 @@
     }
     
     if ([property.typeClass isSubclassOfClass:NGModel.class]) {
-        [property setValue:[property.typeClass randomInstance] forObject:model];
+        if ([property.typeClass stackExceedRecursionLimit:stack]) {
+            return;
+        }
+        
+        [property setValue:[property.typeClass randomInstanceWithStack:stack] forObject:model];
         return;
     }
     
@@ -61,19 +90,25 @@
     }
 }
 
-+ (instancetype)randomInstance {
++ (instancetype)randomInstanceWithStack:(NSMutableArray *)stack {
+    [stack addObject:self.class];
+        
     NGModel *result = [self new];
     
     for (NGProperty *property in [self properties]) {
         NGDataGenerator *generator;
         if (generator == nil) {
-            [self generateProperty:property forModel:result];
+            [self generateProperty:property forModel:result withStack:stack];
         } else {
             [generator setRandomDataOnObject:result];
         }
     }
-    
+    [stack removeLastObject];
     return result;
+}
+
++ (instancetype)randomInstance {
+    return [self randomInstanceWithStack:[NSMutableArray array]];
 }
 
 @end

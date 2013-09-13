@@ -7,13 +7,6 @@
 //
 
 #import "NGModel+Validations.h"
-#import "NGRegexValidation.h"
-#import "NGRequiredValidation.h"
-#import "NGValidationError.h"
-
-@interface NGModel(ValidationsPrivate)
-+ (void)initValidationsCache;
-@end
 
 @implementation NGModel(Validations)
 
@@ -21,6 +14,24 @@ static NSMutableDictionary *validations;
 
 + (NSMutableArray *)validationsArray {
     return validations[NSStringFromClass(self)];
+}
+
++ (void)initValidationsCache {
+    if (self == NGModel.class) {
+        return;
+    }
+    [self.superclass initValidationsCache];
+    
+    if (validations == nil) {
+        validations = [NSMutableDictionary dictionary];
+    }
+    
+    NSString *className = self.className;
+    
+    if (!validations[className]) {
+        validations[className] = [NSMutableArray array];
+        [self initValidations];
+    }
 }
 
 + (void)initValidations {
@@ -61,9 +72,27 @@ static NSMutableDictionary *validations;
             }
             
             [error.messages addObject:[validation errorMessage]];
+            errors[validation.property] = error;
         }
     }
     return [errors allValues];
+}
+
++ (void)addValidation:(NGBaseValidation *)validation {
+    [[self validationsArray] addObject:validation];
+}
+
+- (BOOL)isValid {
+    for (NGBaseValidation *validation in [self.class validationsArray]) {
+        if (![validation isValid:self]) {
+            return NO;
+        }
+    }
+    return YES;
+}
+
+- (BOOL)isInvalid {
+    return ![self isValid];
 }
 
 @end

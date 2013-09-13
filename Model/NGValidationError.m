@@ -11,7 +11,16 @@
 @implementation NGValidationError
 
 + (instancetype)createWithValidation:(NGBaseValidation *)validation {
+    NGValidationError *error = [NGValidationError new];
     
+    error.property = validation.property;
+    error.messages = [NSMutableArray array];
+    
+    return error;
+}
+
+- (NSString *)description {
+    return [NSString stringWithFormat:@"%@: %@",self.property,self.messages];
 }
 
 @end

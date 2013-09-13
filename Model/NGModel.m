@@ -11,6 +11,14 @@
 
 @implementation NGModel
 
+- (id)init {
+    self = [super init];
+    if (self) {
+        [self.class initValidationsCache];
+    }
+    return self;
+}
+
 - (NSString *)className {
     return NSStringFromClass(self.class);
 }
@@ -19,8 +27,17 @@
     return NSStringFromClass(self);
 }
 
+- (NSString *)descriptionString {
+    NSString *result = [NSMutableString stringWithFormat:@"%p: %@",self,[self serialize]];
+    
+    result = [result stringByReplacingOccurrencesOfString:@"\\n" withString:@"\n    "];
+    result = [result stringByReplacingOccurrencesOfString:@"\\\"" withString:@"\""];
+    
+    return result;
+}
+
 - (NSString *)description {
-    return [NSString stringWithFormat:@"%p: %@",self,[self serialize]];
+    return [self descriptionString];
 }
 
 + (NSString *)pluralizedName {

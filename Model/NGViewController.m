@@ -22,6 +22,7 @@
     [super viewDidLoad];
     
     Human *object = [Human randomInstance];
+
     NSLog(@"%@",object);
 //    NSMutableDictionary *humanDictionary = [object serialize];
     

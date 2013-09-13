@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NGModel.h"
+
+@class NGModel;
 
 @interface NGBaseValidation : NSObject
 
@@ -15,7 +16,6 @@
 @property (strong, nonatomic) NSString *errorMessage;
 
 - (BOOL)isValid:(NGModel *)model;
-- (BOOL)isInvalid:(NGModel *)model;
 - (NSString *)defaultErrorMessage;
 
 @end

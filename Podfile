@@ -1,2 +1,2 @@
 pod 'MAObjCRuntime', '~> 0.0.1'
-pod 'OCTotallyLazy', '~> 1.1.0'
+pod 'PlaceKit', '~> 1.0.0'

@@ -7,6 +7,7 @@
 //
 
 #import "NGRequiredValidation.h"
+#import "NGModel.h"
 
 @implementation NGRequiredValidation
 
@@ -21,8 +22,8 @@
 - (BOOL)isValid:(NGModel *)model {
     id value = [model valueForKey:self.property];
     
-    if ([value isKindOfClass:[NSString class]] && [value length] > 0) {
-        return YES;
+    if ([value isKindOfClass:[NSString class]] && [value length] == 0) {
+        return NO;
     }
     
     return value != nil;

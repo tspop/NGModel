@@ -7,6 +7,7 @@
 //
 
 #import "NGRegexValidation.h"
+#import "NGModel.h"
 
 @implementation NGRegexValidation
 

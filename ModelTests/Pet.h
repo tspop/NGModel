@@ -8,10 +8,13 @@
 
 #import "NGModel.h"
 
+@class Human;
+
 @interface Pet : NGModel
 
 @property NSString *name;
 @property NSNumber *numberOfLegs;
 @property NSString *booha;
+@property Human *human;
 
 @end

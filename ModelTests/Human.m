@@ -10,4 +10,12 @@
 
 @implementation Human
 
++ (void)initValidations {
+    [self required:@"name",nil];
+    [self validateWithBlock:^BOOL(Human *human) {
+        return human.id % 2 == 0;
+    }];
+    [self addValidation:[NGRegexValidation emailValidationForProperty:@"name"]];
+}
+
 @end

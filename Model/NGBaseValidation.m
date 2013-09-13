@@ -14,10 +14,6 @@
     return YES;
 }
 
-- (BOOL)isInvalid:(NGModel *)model {
-    return ![self isValid:model];
-}
-
 - (NSString *)errorMessage {
     if (_errorMessage == nil) {
         return [self defaultErrorMessage];
