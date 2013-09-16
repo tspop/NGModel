@@ -8,14 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		12191DA217DF377F000C3F40 /* NGBaseValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 12191DA117DF377E000C3F40 /* NGBaseValidation.m */; };
-		12191DA317DF377F000C3F40 /* NGBaseValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 12191DA117DF377E000C3F40 /* NGBaseValidation.m */; };
 		12191DA817DF378F000C3F40 /* NGRegexValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 12191DA517DF378F000C3F40 /* NGRegexValidation.m */; };
-		12191DA917DF378F000C3F40 /* NGRegexValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 12191DA517DF378F000C3F40 /* NGRegexValidation.m */; };
 		12191DAA17DF378F000C3F40 /* NGRequiredValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 12191DA717DF378F000C3F40 /* NGRequiredValidation.m */; };
-		12191DAB17DF378F000C3F40 /* NGRequiredValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 12191DA717DF378F000C3F40 /* NGRequiredValidation.m */; };
 		12191DB217DF3B35000C3F40 /* NGBlockValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 12191DB117DF3B35000C3F40 /* NGBlockValidation.m */; };
-		12191DB317DF3B35000C3F40 /* NGBlockValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 12191DB117DF3B35000C3F40 /* NGBlockValidation.m */; };
-		12191DB717DF3EDE000C3F40 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 12191DB617DF3EDE000C3F40 /* Student.m */; };
 		12191DB817DF3EE4000C3F40 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 12191DB617DF3EDE000C3F40 /* Student.m */; };
 		12191DBC17DF5C7B000C3F40 /* NSObject+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = 12191DBB17DF5C7B000C3F40 /* NSObject+Properties.m */; };
 		1235F05617C666C3009FD2E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1235F05517C666C3009FD2E9 /* UIKit.framework */; };
@@ -29,47 +24,51 @@
 		1235F06C17C666C3009FD2E9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1235F06B17C666C3009FD2E9 /* Default-568h@2x.png */; };
 		1235F06F17C666C3009FD2E9 /* NGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1235F06E17C666C3009FD2E9 /* NGViewController.m */; };
 		1235F07217C666C3009FD2E9 /* NGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1235F07017C666C3009FD2E9 /* NGViewController.xib */; };
-		1235F07A17C666C3009FD2E9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1235F07917C666C3009FD2E9 /* SenTestingKit.framework */; };
-		1235F07B17C666C3009FD2E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1235F05517C666C3009FD2E9 /* UIKit.framework */; };
-		1235F07C17C666C3009FD2E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1235F05717C666C3009FD2E9 /* Foundation.framework */; };
-		1235F08417C666C3009FD2E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1235F08217C666C3009FD2E9 /* InfoPlist.strings */; };
-		1235F08717C666C3009FD2E9 /* ModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1235F08617C666C3009FD2E9 /* ModelTests.m */; };
 		1235F09617C666F8009FD2E9 /* NGModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1235F09517C666F8009FD2E9 /* NGModel.m */; };
-		1235F09717C666F8009FD2E9 /* NGModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1235F09517C666F8009FD2E9 /* NGModel.m */; };
+		12AD6ECE17E711F10035F24E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1235F05517C666C3009FD2E9 /* UIKit.framework */; };
+		12AD6ECF17E711F10035F24E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1235F05717C666C3009FD2E9 /* Foundation.framework */; };
+		12AD6ED017E711F10035F24E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1235F05917C666C3009FD2E9 /* CoreGraphics.framework */; };
+		12AD6ED617E711F10035F24E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12AD6ED417E711F10035F24E /* InfoPlist.strings */; };
+		12AD6ED817E711F10035F24E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12AD6ED717E711F10035F24E /* main.m */; };
+		12AD6EDC17E711F10035F24E /* NGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12AD6EDB17E711F10035F24E /* NGAppDelegate.m */; };
+		12AD6EDE17E711F10035F24E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AD6EDD17E711F10035F24E /* Default.png */; };
+		12AD6EE017E711F10035F24E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AD6EDF17E711F10035F24E /* Default@2x.png */; };
+		12AD6EE217E711F10035F24E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AD6EE117E711F10035F24E /* Default-568h@2x.png */; };
+		12AD6EF417E7140E0035F24E /* NGModel_SerializationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 12AD6EF317E7140E0035F24E /* NGModel_SerializationTest.m */; };
+		12AD6EF517E714340035F24E /* NGModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1235F09517C666F8009FD2E9 /* NGModel.m */; };
+		12AD6EF617E714370035F24E /* NGModel+Serialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D7380917D5E320002B49C8 /* NGModel+Serialization.m */; };
+		12AD6EF717E7145E0035F24E /* NGModel+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D7380C17D5E32D002B49C8 /* NGModel+Validations.m */; };
+		12AD6EF817E714630035F24E /* NGRequiredValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 12191DA717DF378F000C3F40 /* NGRequiredValidation.m */; };
+		12AD6EF917E714780035F24E /* NGModel+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A6817E08A6100D54944 /* NGModel+Helpers.m */; };
+		12AD6EFA17E7147B0035F24E /* NGModel+Caching.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A6317E07C4F00D54944 /* NGModel+Caching.m */; };
+		12AD6EFB17E7147E0035F24E /* NSObject+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = 12191DBB17DF5C7B000C3F40 /* NSObject+Properties.m */; };
+		12AD6EFC17E714810035F24E /* NGProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B3B2B517E06845002C2925 /* NGProperty.m */; };
+		12AD6EFD17E714850035F24E /* NGDataGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A5E17E07AD300D54944 /* NGDataGenerator.m */; };
+		12AD6EFE17E714890035F24E /* NGModel+Instantation.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A5917E0749400D54944 /* NGModel+Instantation.m */; };
+		12AD6EFF17E7148D0035F24E /* NGValidationError.m in Sources */ = {isa = PBXBuildFile; fileRef = A18B0E9117E1D69E00ADAAA8 /* NGValidationError.m */; };
+		12AD6F0017E714900035F24E /* NGBaseValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 12191DA117DF377E000C3F40 /* NGBaseValidation.m */; };
+		12AD6F0117E714930035F24E /* NGBlockValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 12191DB117DF3B35000C3F40 /* NGBlockValidation.m */; };
+		12AD6F0217E714C70035F24E /* NGRegexValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 12191DA517DF378F000C3F40 /* NGRegexValidation.m */; };
+		12AD6F0617E7155C0035F24E /* SimpleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 12AD6F0517E7155C0035F24E /* SimpleModel.m */; };
+		12AD6F0817E71A810035F24E /* NGModel_ValidationsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 12AD6F0717E71A810035F24E /* NGModel_ValidationsTest.m */; };
 		12B3B2B617E06845002C2925 /* NGProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B3B2B517E06845002C2925 /* NGProperty.m */; };
 		12D7380A17D5E320002B49C8 /* NGModel+Serialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D7380917D5E320002B49C8 /* NGModel+Serialization.m */; };
 		12D7380D17D5E32D002B49C8 /* NGModel+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D7380C17D5E32D002B49C8 /* NGModel+Validations.m */; };
-		12D7380E17D5E33A002B49C8 /* NGModel+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D7380C17D5E32D002B49C8 /* NGModel+Validations.m */; };
-		12D7380F17D5E33C002B49C8 /* NGModel+Serialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D7380917D5E320002B49C8 /* NGModel+Serialization.m */; };
+		1BF80641F3BB42E5AE108C84 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0825BB798D464C48B2F67588 /* libPods.a */; };
+		7D1A6155B93543DE8AB3679E /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEBA820A4D94A1CB33692AC /* libPods-Tests.a */; };
 		A18B0E9217E1D69E00ADAAA8 /* NGValidationError.m in Sources */ = {isa = PBXBuildFile; fileRef = A18B0E9117E1D69E00ADAAA8 /* NGValidationError.m */; };
 		A1D51A5617E06FCC00D54944 /* SerializationObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A5517E06FCC00D54944 /* SerializationObject.m */; };
-		A1D51A5717E06FCC00D54944 /* SerializationObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A5517E06FCC00D54944 /* SerializationObject.m */; };
 		A1D51A5A17E0749400D54944 /* NGModel+Instantation.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A5917E0749400D54944 /* NGModel+Instantation.m */; };
-		A1D51A5B17E0749400D54944 /* NGModel+Instantation.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A5917E0749400D54944 /* NGModel+Instantation.m */; };
 		A1D51A5F17E07AD300D54944 /* NGDataGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A5E17E07AD300D54944 /* NGDataGenerator.m */; };
-		A1D51A6017E07AD300D54944 /* NGDataGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A5E17E07AD300D54944 /* NGDataGenerator.m */; };
 		A1D51A6417E07C4F00D54944 /* NGModel+Caching.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A6317E07C4F00D54944 /* NGModel+Caching.m */; };
-		A1D51A6517E07C4F00D54944 /* NGModel+Caching.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A6317E07C4F00D54944 /* NGModel+Caching.m */; };
 		A1D51A6917E08A6100D54944 /* NGModel+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A6817E08A6100D54944 /* NGModel+Helpers.m */; };
 		A1D51A6C17E09F2300D54944 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A6B17E09F2300D54944 /* Human.m */; };
-		A1D51A6D17E09F2300D54944 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A6B17E09F2300D54944 /* Human.m */; };
 		A1D51A7A17E0B97100D54944 /* Pet.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A7917E0B97100D54944 /* Pet.m */; };
-		A1D51A7B17E0B97100D54944 /* Pet.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A7917E0B97100D54944 /* Pet.m */; };
-		F0CB4C7F9F2243738A0908D9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBFFAD4B44664F2EBE146322 /* libPods.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		1235F07D17C666C3009FD2E9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1235F04A17C666C3009FD2E9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1235F05117C666C3009FD2E9;
-			remoteInfo = Model;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		07A560D83E8D47598283AE40 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		0825BB798D464C48B2F67588 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		12191DA017DF377E000C3F40 /* NGBaseValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGBaseValidation.h; sourceTree = "<group>"; };
 		12191DA117DF377E000C3F40 /* NGBaseValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGBaseValidation.m; sourceTree = "<group>"; };
 		12191DA417DF378F000C3F40 /* NGRegexValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGRegexValidation.h; sourceTree = "<group>"; };
@@ -98,7 +97,6 @@
 		1235F06D17C666C3009FD2E9 /* NGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGViewController.h; sourceTree = "<group>"; };
 		1235F06E17C666C3009FD2E9 /* NGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGViewController.m; sourceTree = "<group>"; };
 		1235F07117C666C3009FD2E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NGViewController.xib; sourceTree = "<group>"; };
-		1235F07817C666C3009FD2E9 /* ModelTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1235F07917C666C3009FD2E9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		1235F08117C666C3009FD2E9 /* ModelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ModelTests-Info.plist"; sourceTree = "<group>"; };
 		1235F08317C666C3009FD2E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -106,12 +104,27 @@
 		1235F08617C666C3009FD2E9 /* ModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelTests.m; sourceTree = "<group>"; };
 		1235F09417C666F8009FD2E9 /* NGModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGModel.h; sourceTree = "<group>"; };
 		1235F09517C666F8009FD2E9 /* NGModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGModel.m; sourceTree = "<group>"; };
+		12AD6ECD17E711F10035F24E /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12AD6ED317E711F10035F24E /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		12AD6ED517E711F10035F24E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		12AD6ED717E711F10035F24E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		12AD6ED917E711F10035F24E /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		12AD6EDA17E711F10035F24E /* NGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGAppDelegate.h; sourceTree = "<group>"; };
+		12AD6EDB17E711F10035F24E /* NGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGAppDelegate.m; sourceTree = "<group>"; };
+		12AD6EDD17E711F10035F24E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		12AD6EDF17E711F10035F24E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		12AD6EE117E711F10035F24E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		12AD6EF317E7140E0035F24E /* NGModel_SerializationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGModel_SerializationTest.m; sourceTree = "<group>"; };
+		12AD6F0417E7155C0035F24E /* SimpleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleModel.h; sourceTree = "<group>"; };
+		12AD6F0517E7155C0035F24E /* SimpleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleModel.m; sourceTree = "<group>"; };
+		12AD6F0717E71A810035F24E /* NGModel_ValidationsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGModel_ValidationsTest.m; sourceTree = "<group>"; };
 		12B3B2B417E06845002C2925 /* NGProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGProperty.h; sourceTree = "<group>"; };
 		12B3B2B517E06845002C2925 /* NGProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGProperty.m; sourceTree = "<group>"; };
 		12D7380817D5E320002B49C8 /* NGModel+Serialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NGModel+Serialization.h"; sourceTree = "<group>"; };
 		12D7380917D5E320002B49C8 /* NGModel+Serialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NGModel+Serialization.m"; sourceTree = "<group>"; };
 		12D7380B17D5E32C002B49C8 /* NGModel+Validations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NGModel+Validations.h"; sourceTree = "<group>"; };
 		12D7380C17D5E32D002B49C8 /* NGModel+Validations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NGModel+Validations.m"; sourceTree = "<group>"; };
+		89AA8B8B9D38421BABC55750 /* Pods-Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.xcconfig"; path = "Pods/Pods-Tests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		A18B0E9017E1D69E00ADAAA8 /* NGValidationError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGValidationError.h; sourceTree = "<group>"; };
 		A18B0E9117E1D69E00ADAAA8 /* NGValidationError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGValidationError.m; sourceTree = "<group>"; };
 		A1D51A5417E06FCC00D54944 /* SerializationObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SerializationObject.h; sourceTree = "<group>"; };
@@ -128,7 +141,8 @@
 		A1D51A6B17E09F2300D54944 /* Human.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
 		A1D51A7817E0B97100D54944 /* Pet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pet.h; sourceTree = "<group>"; };
 		A1D51A7917E0B97100D54944 /* Pet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pet.m; sourceTree = "<group>"; };
-		DBFFAD4B44664F2EBE146322 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6EEA417B3FC47E79592C69D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		CEEBA820A4D94A1CB33692AC /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,17 +153,18 @@
 				1235F05617C666C3009FD2E9 /* UIKit.framework in Frameworks */,
 				1235F05817C666C3009FD2E9 /* Foundation.framework in Frameworks */,
 				1235F05A17C666C3009FD2E9 /* CoreGraphics.framework in Frameworks */,
-				F0CB4C7F9F2243738A0908D9 /* libPods.a in Frameworks */,
+				1BF80641F3BB42E5AE108C84 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1235F07417C666C3009FD2E9 /* Frameworks */ = {
+		12AD6ECA17E711F10035F24E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1235F07A17C666C3009FD2E9 /* SenTestingKit.framework in Frameworks */,
-				1235F07B17C666C3009FD2E9 /* UIKit.framework in Frameworks */,
-				1235F07C17C666C3009FD2E9 /* Foundation.framework in Frameworks */,
+				12AD6ECE17E711F10035F24E /* UIKit.framework in Frameworks */,
+				12AD6ECF17E711F10035F24E /* Foundation.framework in Frameworks */,
+				12AD6ED017E711F10035F24E /* CoreGraphics.framework in Frameworks */,
+				7D1A6155B93543DE8AB3679E /* libPods-Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,9 +237,12 @@
 			children = (
 				1235F05B17C666C3009FD2E9 /* Model */,
 				1235F07F17C666C3009FD2E9 /* ModelTests */,
+				12AD6ED117E711F10035F24E /* Tests */,
 				1235F05417C666C3009FD2E9 /* Frameworks */,
 				1235F05317C666C3009FD2E9 /* Products */,
 				07A560D83E8D47598283AE40 /* Pods.xcconfig */,
+				A6EEA417B3FC47E79592C69D /* Pods.xcconfig */,
+				89AA8B8B9D38421BABC55750 /* Pods-Tests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -232,7 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				1235F05217C666C3009FD2E9 /* Model.app */,
-				1235F07817C666C3009FD2E9 /* ModelTests.octest */,
+				12AD6ECD17E711F10035F24E /* Tests.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -244,7 +262,8 @@
 				1235F05717C666C3009FD2E9 /* Foundation.framework */,
 				1235F05917C666C3009FD2E9 /* CoreGraphics.framework */,
 				1235F07917C666C3009FD2E9 /* SenTestingKit.framework */,
-				DBFFAD4B44664F2EBE146322 /* libPods.a */,
+				0825BB798D464C48B2F67588 /* libPods.a */,
+				CEEBA820A4D94A1CB33692AC /* libPods-Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -322,6 +341,50 @@
 			name = Instantiation;
 			sourceTree = "<group>";
 		};
+		12AD6ED117E711F10035F24E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				12AD6F0317E7153B0035F24E /* TestModels */,
+				12AD6EF017E713DA0035F24E /* SerializationTests */,
+				12AD6EDA17E711F10035F24E /* NGAppDelegate.h */,
+				12AD6EDB17E711F10035F24E /* NGAppDelegate.m */,
+				12AD6ED217E711F10035F24E /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		12AD6ED217E711F10035F24E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12AD6ED317E711F10035F24E /* Tests-Info.plist */,
+				12AD6ED417E711F10035F24E /* InfoPlist.strings */,
+				12AD6ED717E711F10035F24E /* main.m */,
+				12AD6ED917E711F10035F24E /* Tests-Prefix.pch */,
+				12AD6EDD17E711F10035F24E /* Default.png */,
+				12AD6EDF17E711F10035F24E /* Default@2x.png */,
+				12AD6EE117E711F10035F24E /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		12AD6EF017E713DA0035F24E /* SerializationTests */ = {
+			isa = PBXGroup;
+			children = (
+				12AD6EF317E7140E0035F24E /* NGModel_SerializationTest.m */,
+				12AD6F0717E71A810035F24E /* NGModel_ValidationsTest.m */,
+			);
+			name = SerializationTests;
+			sourceTree = "<group>";
+		};
+		12AD6F0317E7153B0035F24E /* TestModels */ = {
+			isa = PBXGroup;
+			children = (
+				12AD6F0417E7155C0035F24E /* SimpleModel.h */,
+				12AD6F0517E7155C0035F24E /* SimpleModel.m */,
+			);
+			name = TestModels;
+			sourceTree = "<group>";
+		};
 		12B3B2B317E06833002C2925 /* NGProperty */ = {
 			isa = PBXGroup;
 			children = (
@@ -397,11 +460,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1235F08A17C666C3009FD2E9 /* Build configuration list for PBXNativeTarget "Model" */;
 			buildPhases = (
+				9BA286790FF8483A96613135 /* Check Pods Manifest.lock */,
 				7DE28619C2814E9FAAD86964 /* Check Pods Manifest.lock */,
 				1235F04E17C666C3009FD2E9 /* Sources */,
 				1235F04F17C666C3009FD2E9 /* Frameworks */,
 				1235F05017C666C3009FD2E9 /* Resources */,
 				ABB1BDF08BFD49BAADDE42E0 /* Copy Pods Resources */,
+				613456D774354C3B9AC00B62 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -412,24 +477,24 @@
 			productReference = 1235F05217C666C3009FD2E9 /* Model.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1235F07717C666C3009FD2E9 /* ModelTests */ = {
+		12AD6ECC17E711F10035F24E /* Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1235F08D17C666C3009FD2E9 /* Build configuration list for PBXNativeTarget "ModelTests" */;
+			buildConfigurationList = 12AD6EE317E711F10035F24E /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
-				1235F07317C666C3009FD2E9 /* Sources */,
-				1235F07417C666C3009FD2E9 /* Frameworks */,
-				1235F07517C666C3009FD2E9 /* Resources */,
-				1235F07617C666C3009FD2E9 /* ShellScript */,
+				53F06D969907412BB9449F98 /* Check Pods Manifest.lock */,
+				12AD6EC917E711F10035F24E /* Sources */,
+				12AD6ECA17E711F10035F24E /* Frameworks */,
+				12AD6ECB17E711F10035F24E /* Resources */,
+				1ABD4D381AC94E7882744F4C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1235F07E17C666C3009FD2E9 /* PBXTargetDependency */,
 			);
-			name = ModelTests;
-			productName = ModelTests;
-			productReference = 1235F07817C666C3009FD2E9 /* ModelTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			name = Tests;
+			productName = Tests;
+			productReference = 12AD6ECD17E711F10035F24E /* Tests.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -454,7 +519,7 @@
 			projectRoot = "";
 			targets = (
 				1235F05117C666C3009FD2E9 /* Model */,
-				1235F07717C666C3009FD2E9 /* ModelTests */,
+				12AD6ECC17E711F10035F24E /* Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -472,31 +537,77 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1235F07517C666C3009FD2E9 /* Resources */ = {
+		12AD6ECB17E711F10035F24E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1235F08417C666C3009FD2E9 /* InfoPlist.strings in Resources */,
+				12AD6ED617E711F10035F24E /* InfoPlist.strings in Resources */,
+				12AD6EDE17E711F10035F24E /* Default.png in Resources */,
+				12AD6EE017E711F10035F24E /* Default@2x.png in Resources */,
+				12AD6EE217E711F10035F24E /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1235F07617C666C3009FD2E9 /* ShellScript */ = {
+		1ABD4D381AC94E7882744F4C /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Pods-Tests-resources.sh\"\n";
+		};
+		53F06D969907412BB9449F98 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		613456D774354C3B9AC00B62 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 		};
 		7DE28619C2814E9FAAD86964 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		9BA286790FF8483A96613135 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -555,37 +666,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1235F07317C666C3009FD2E9 /* Sources */ = {
+		12AD6EC917E711F10035F24E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1235F08717C666C3009FD2E9 /* ModelTests.m in Sources */,
-				1235F09717C666F8009FD2E9 /* NGModel.m in Sources */,
-				12D7380E17D5E33A002B49C8 /* NGModel+Validations.m in Sources */,
-				12D7380F17D5E33C002B49C8 /* NGModel+Serialization.m in Sources */,
-				12191DA317DF377F000C3F40 /* NGBaseValidation.m in Sources */,
-				A1D51A6517E07C4F00D54944 /* NGModel+Caching.m in Sources */,
-				12191DA917DF378F000C3F40 /* NGRegexValidation.m in Sources */,
-				A1D51A6D17E09F2300D54944 /* Human.m in Sources */,
-				12191DAB17DF378F000C3F40 /* NGRequiredValidation.m in Sources */,
-				A1D51A7B17E0B97100D54944 /* Pet.m in Sources */,
-				A1D51A5717E06FCC00D54944 /* SerializationObject.m in Sources */,
-				A1D51A5B17E0749400D54944 /* NGModel+Instantation.m in Sources */,
-				12191DB317DF3B35000C3F40 /* NGBlockValidation.m in Sources */,
-				A1D51A6017E07AD300D54944 /* NGDataGenerator.m in Sources */,
-				12191DB717DF3EDE000C3F40 /* Student.m in Sources */,
+				12AD6ED817E711F10035F24E /* main.m in Sources */,
+				12AD6EDC17E711F10035F24E /* NGAppDelegate.m in Sources */,
+				12AD6EF417E7140E0035F24E /* NGModel_SerializationTest.m in Sources */,
+				12AD6EF517E714340035F24E /* NGModel.m in Sources */,
+				12AD6EF617E714370035F24E /* NGModel+Serialization.m in Sources */,
+				12AD6EF717E7145E0035F24E /* NGModel+Validations.m in Sources */,
+				12AD6EF817E714630035F24E /* NGRequiredValidation.m in Sources */,
+				12AD6EF917E714780035F24E /* NGModel+Helpers.m in Sources */,
+				12AD6EFA17E7147B0035F24E /* NGModel+Caching.m in Sources */,
+				12AD6EFB17E7147E0035F24E /* NSObject+Properties.m in Sources */,
+				12AD6EFC17E714810035F24E /* NGProperty.m in Sources */,
+				12AD6EFD17E714850035F24E /* NGDataGenerator.m in Sources */,
+				12AD6EFE17E714890035F24E /* NGModel+Instantation.m in Sources */,
+				12AD6EFF17E7148D0035F24E /* NGValidationError.m in Sources */,
+				12AD6F0017E714900035F24E /* NGBaseValidation.m in Sources */,
+				12AD6F0117E714930035F24E /* NGBlockValidation.m in Sources */,
+				12AD6F0217E714C70035F24E /* NGRegexValidation.m in Sources */,
+				12AD6F0617E7155C0035F24E /* SimpleModel.m in Sources */,
+				12AD6F0817E71A810035F24E /* NGModel_ValidationsTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1235F07E17C666C3009FD2E9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1235F05117C666C3009FD2E9 /* Model */;
-			targetProxy = 1235F07D17C666C3009FD2E9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1235F05E17C666C3009FD2E9 /* InfoPlist.strings */ = {
@@ -608,6 +715,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				1235F08317C666C3009FD2E9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		12AD6ED417E711F10035F24E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12AD6ED517E711F10035F24E /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -673,7 +788,7 @@
 		};
 		1235F08B17C666C3009FD2E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07A560D83E8D47598283AE40 /* Pods.xcconfig */;
+			baseConfigurationReference = A6EEA417B3FC47E79592C69D /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Model/Model-Prefix.pch";
@@ -685,7 +800,7 @@
 		};
 		1235F08C17C666C3009FD2E9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07A560D83E8D47598283AE40 /* Pods.xcconfig */;
+			baseConfigurationReference = A6EEA417B3FC47E79592C69D /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Model/Model-Prefix.pch";
@@ -695,37 +810,31 @@
 			};
 			name = Release;
 		};
-		1235F08E17C666C3009FD2E9 /* Debug */ = {
+		12AD6EE417E711F10035F24E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89AA8B8B9D38421BABC55750 /* Pods-Tests.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Model.app/Model";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Model/Model-Prefix.pch";
-				INFOPLIST_FILE = "ModelTests/ModelTests-Info.plist";
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		1235F08F17C666C3009FD2E9 /* Release */ = {
+		12AD6EE517E711F10035F24E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89AA8B8B9D38421BABC55750 /* Pods-Tests.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Model.app/Model";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Model/Model-Prefix.pch";
-				INFOPLIST_FILE = "ModelTests/ModelTests-Info.plist";
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
@@ -750,11 +859,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1235F08D17C666C3009FD2E9 /* Build configuration list for PBXNativeTarget "ModelTests" */ = {
+		12AD6EE317E711F10035F24E /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1235F08E17C666C3009FD2E9 /* Debug */,
-				1235F08F17C666C3009FD2E9 /* Release */,
+				12AD6EE417E711F10035F24E /* Debug */,
+				12AD6EE517E711F10035F24E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -74,6 +74,10 @@
         
         id value = dictionary[property.name];
         
+        if (value == nil) {
+            continue;
+        }
+        
         if (value == [NSNull null]) {
             value = nil;
         } else if ([value isKindOfClass:NSDictionary.class]) {

@@ -26,9 +26,14 @@
     unsigned int count;
     objc_property_t *list = class_copyPropertyList(self, &count);
     
-    NSMutableArray *array = [NSMutableArray arrayWithCapacity:count];
-    for(unsigned i = 0; i < count; i++)
-        array[i] = [NGProperty createWithObjCProperty:list[i]];
+    NSMutableArray *array = [NSMutableArray array];
+    for(unsigned i = 0; i < count; i++) {
+        NGProperty *result = [NGProperty createWithObjCProperty:list[i]];
+        if (result) {
+            [array addObject:result];
+        }
+    }
+
     
     free(list);
     

@@ -20,15 +20,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    Human *object = [Human randomInstance];
-
-    NSLog(@"%@",object);
-//    NSMutableDictionary *humanDictionary = [object serialize];
-    
-//    [humanDictionary removeObjectForKey:@"id"];
-    
-//    NSLog(@"%@",[Human createFromDictionary:humanDictionary]);
 }
 
 @end

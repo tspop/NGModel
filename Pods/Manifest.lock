@@ -1,15 +1,21 @@
 PODS:
+  - GHUnitIOS (0.5.6)
   - MAObjCRuntime (0.0.1)
+  - OCMock (2.1.1)
   - PlaceKit (1.0.0):
     - PlaceKit/Core
   - PlaceKit/Core (1.0.0)
 
 DEPENDENCIES:
+  - GHUnitIOS (~> 0.5.6)
   - MAObjCRuntime (~> 0.0.1)
+  - OCMock (~> 2.1.1)
   - PlaceKit (~> 1.0.0)
 
 SPEC CHECKSUMS:
+  GHUnitIOS: bf149b2c44084eee2785ce4ac3675c3a699e509d
   MAObjCRuntime: 284004079156d10cb8237bc3ffcfa3a0e1a0af22
+  OCMock: 79212e5e328378af5cfd6edb5feacfd6c49cd8a3
   PlaceKit: 3aba4078db5c8b62af352fec96d81119b40f1e6d
 
 COCOAPODS: 0.19.1

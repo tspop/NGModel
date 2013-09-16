@@ -27,6 +27,10 @@
         [attributes setObject:[attrPair substringFromIndex:1] forKey:[attrPair substringToIndex:1]];
     }
     
+    if ([attributes valueForKey:@"R"]) {
+        return nil;
+    }
+    
     NSString *type = attributes[@"T"];
 
     if ([type characterAtIndex:0] == '@') {
