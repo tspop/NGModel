@@ -53,6 +53,8 @@
 		12AD6F0817E71A810035F24E /* NGModel_ValidationsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 12AD6F0717E71A810035F24E /* NGModel_ValidationsTest.m */; };
 		12AD6F0C17E737360035F24E /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 12AD6F0B17E737360035F24E /* Animal.m */; };
 		12AD6F1017E737430035F24E /* Duck.m in Sources */ = {isa = PBXBuildFile; fileRef = 12AD6F0F17E737430035F24E /* Duck.m */; };
+		12AD6F1417E747870035F24E /* NGSerializationRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 12AD6F1317E747870035F24E /* NGSerializationRule.m */; };
+		12AD6F1517E747900035F24E /* NGSerializationRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 12AD6F1317E747870035F24E /* NGSerializationRule.m */; };
 		12B3B2B617E06845002C2925 /* NGProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B3B2B517E06845002C2925 /* NGProperty.m */; };
 		12D7380A17D5E320002B49C8 /* NGModel+Serialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D7380917D5E320002B49C8 /* NGModel+Serialization.m */; };
 		12D7380D17D5E32D002B49C8 /* NGModel+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D7380C17D5E32D002B49C8 /* NGModel+Validations.m */; };
@@ -124,6 +126,8 @@
 		12AD6F0B17E737360035F24E /* Animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
 		12AD6F0E17E737430035F24E /* Duck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Duck.h; sourceTree = "<group>"; };
 		12AD6F0F17E737430035F24E /* Duck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Duck.m; sourceTree = "<group>"; };
+		12AD6F1217E747870035F24E /* NGSerializationRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGSerializationRule.h; sourceTree = "<group>"; };
+		12AD6F1317E747870035F24E /* NGSerializationRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGSerializationRule.m; sourceTree = "<group>"; };
 		12B3B2B417E06845002C2925 /* NGProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGProperty.h; sourceTree = "<group>"; };
 		12B3B2B517E06845002C2925 /* NGProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGProperty.m; sourceTree = "<group>"; };
 		12D7380817D5E320002B49C8 /* NGModel+Serialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NGModel+Serialization.h"; sourceTree = "<group>"; };
@@ -411,6 +415,15 @@
 			name = Duck;
 			sourceTree = "<group>";
 		};
+		12AD6F1117E747760035F24E /* NGSerializationRule */ = {
+			isa = PBXGroup;
+			children = (
+				12AD6F1217E747870035F24E /* NGSerializationRule.h */,
+				12AD6F1317E747870035F24E /* NGSerializationRule.m */,
+			);
+			name = NGSerializationRule;
+			sourceTree = "<group>";
+		};
 		12B3B2B317E06833002C2925 /* NGProperty */ = {
 			isa = PBXGroup;
 			children = (
@@ -437,6 +450,7 @@
 		12D7381117D5E3BD002B49C8 /* Serialization */ = {
 			isa = PBXGroup;
 			children = (
+				12AD6F1117E747760035F24E /* NGSerializationRule */,
 				12D7380817D5E320002B49C8 /* NGModel+Serialization.h */,
 				12D7380917D5E320002B49C8 /* NGModel+Serialization.m */,
 			);
@@ -689,6 +703,7 @@
 				12191DB817DF3EE4000C3F40 /* Student.m in Sources */,
 				12191DBC17DF5C7B000C3F40 /* NSObject+Properties.m in Sources */,
 				12B3B2B617E06845002C2925 /* NGProperty.m in Sources */,
+				12AD6F1417E747870035F24E /* NGSerializationRule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,6 +732,7 @@
 				12AD6F0817E71A810035F24E /* NGModel_ValidationsTest.m in Sources */,
 				12AD6F0C17E737360035F24E /* Animal.m in Sources */,
 				12AD6F1017E737430035F24E /* Duck.m in Sources */,
+				12AD6F1517E747900035F24E /* NGSerializationRule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

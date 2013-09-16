@@ -25,4 +25,17 @@
 + (void)setDateFormatter:(NSDateFormatter *)dateFormatter forProperty:(NSString *)property;
 + (NSDateFormatter *)dateFormatterForProperty:(NSString *)property;
 
+
+// KEY PROPERTY MAPPING
+
+@property NSValueTransformer *keyPropertyMapper;
++ (void)addMappingForKeysToProperties:(NSDictionary *)mapping;
++ (void)addMappingForKey:(NSString *)key toProperty:(NSString *)property;
+
+// PROPERTY VALUE MAPPING
+
+
+// CLASS VALUE MAPPING
++ (void)mapClass:(Class)class toString:(NSString *)string;
+
 @end
