@@ -1,6 +1,6 @@
 NGModel
 =======
-NGModel (New Generation Model) is a convention over configuration model framework for Objective-C.
+NGModel (Next Generation Model) is a convention over configuration model framework for Objective-C.
 
 Features Supported By NGModel
 
