@@ -6,7 +6,13 @@
 //  Copyright (c) 2013 Silviu Pop. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <NGModel.h>
+#import "NSObject+Properties.h"
+
+@interface NGModel(Helpers)
+- (NSArray *)allProperties;
++ (NSArray *)allProperties;
+@end
 
 @interface NSString(Helpers)
 - (NSString *)capitalizedFirstLetter;

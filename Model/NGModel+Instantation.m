@@ -7,7 +7,7 @@
 //
 
 #import "NGModel+Instantation.h"
-#import "NSObject+Properties.h"
+#import "NGModel+Helpers.h"
 #import "NGDataGenerator.h"
 
 @implementation NGModel(Instantation)
@@ -95,7 +95,7 @@
         
     NGModel *result = [self new];
     
-    for (NGProperty *property in [self properties]) {
+    for (NGProperty *property in self.allProperties) {
         NGDataGenerator *generator;
         if (generator == nil) {
             [self generateProperty:property forModel:result withStack:stack];

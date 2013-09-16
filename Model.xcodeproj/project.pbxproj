@@ -51,6 +51,8 @@
 		12AD6F0217E714C70035F24E /* NGRegexValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 12191DA517DF378F000C3F40 /* NGRegexValidation.m */; };
 		12AD6F0617E7155C0035F24E /* SimpleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 12AD6F0517E7155C0035F24E /* SimpleModel.m */; };
 		12AD6F0817E71A810035F24E /* NGModel_ValidationsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 12AD6F0717E71A810035F24E /* NGModel_ValidationsTest.m */; };
+		12AD6F0C17E737360035F24E /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 12AD6F0B17E737360035F24E /* Animal.m */; };
+		12AD6F1017E737430035F24E /* Duck.m in Sources */ = {isa = PBXBuildFile; fileRef = 12AD6F0F17E737430035F24E /* Duck.m */; };
 		12B3B2B617E06845002C2925 /* NGProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B3B2B517E06845002C2925 /* NGProperty.m */; };
 		12D7380A17D5E320002B49C8 /* NGModel+Serialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D7380917D5E320002B49C8 /* NGModel+Serialization.m */; };
 		12D7380D17D5E32D002B49C8 /* NGModel+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D7380C17D5E32D002B49C8 /* NGModel+Validations.m */; };
@@ -118,6 +120,10 @@
 		12AD6F0417E7155C0035F24E /* SimpleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleModel.h; sourceTree = "<group>"; };
 		12AD6F0517E7155C0035F24E /* SimpleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleModel.m; sourceTree = "<group>"; };
 		12AD6F0717E71A810035F24E /* NGModel_ValidationsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGModel_ValidationsTest.m; sourceTree = "<group>"; };
+		12AD6F0A17E737360035F24E /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		12AD6F0B17E737360035F24E /* Animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		12AD6F0E17E737430035F24E /* Duck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Duck.h; sourceTree = "<group>"; };
+		12AD6F0F17E737430035F24E /* Duck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Duck.m; sourceTree = "<group>"; };
 		12B3B2B417E06845002C2925 /* NGProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGProperty.h; sourceTree = "<group>"; };
 		12B3B2B517E06845002C2925 /* NGProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGProperty.m; sourceTree = "<group>"; };
 		12D7380817D5E320002B49C8 /* NGModel+Serialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NGModel+Serialization.h"; sourceTree = "<group>"; };
@@ -379,10 +385,30 @@
 		12AD6F0317E7153B0035F24E /* TestModels */ = {
 			isa = PBXGroup;
 			children = (
+				12AD6F0917E736CF0035F24E /* Animal */,
 				12AD6F0417E7155C0035F24E /* SimpleModel.h */,
 				12AD6F0517E7155C0035F24E /* SimpleModel.m */,
 			);
 			name = TestModels;
+			sourceTree = "<group>";
+		};
+		12AD6F0917E736CF0035F24E /* Animal */ = {
+			isa = PBXGroup;
+			children = (
+				12AD6F0D17E737390035F24E /* Duck */,
+				12AD6F0A17E737360035F24E /* Animal.h */,
+				12AD6F0B17E737360035F24E /* Animal.m */,
+			);
+			name = Animal;
+			sourceTree = "<group>";
+		};
+		12AD6F0D17E737390035F24E /* Duck */ = {
+			isa = PBXGroup;
+			children = (
+				12AD6F0E17E737430035F24E /* Duck.h */,
+				12AD6F0F17E737430035F24E /* Duck.m */,
+			);
+			name = Duck;
 			sourceTree = "<group>";
 		};
 		12B3B2B317E06833002C2925 /* NGProperty */ = {
@@ -689,6 +715,8 @@
 				12AD6F0217E714C70035F24E /* NGRegexValidation.m in Sources */,
 				12AD6F0617E7155C0035F24E /* SimpleModel.m in Sources */,
 				12AD6F0817E71A810035F24E /* NGModel_ValidationsTest.m in Sources */,
+				12AD6F0C17E737360035F24E /* Animal.m in Sources */,
+				12AD6F1017E737430035F24E /* Duck.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

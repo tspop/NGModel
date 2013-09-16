@@ -11,10 +11,17 @@
 @interface NGModel(Serialization)
 
 - (id)serialize;
-- (id)serializeAsDictionary;
+- (id)serializeOnly:(NSString *)onlyList;
+- (id)serializeExcept:(NSString *)exceptList;
 
 + (id)create:(id)data;
-+ (id)createFromDictionary:(NSDictionary *)dictionary;
++ (id)create:(id)data only:(NSString *)onlyList;
++ (id)create:(id)data except:(NSString *)exceptList;
+
+- (id)update:(id)data;
+- (id)update:(id)data only:(NSString *)onlyList;
+- (id)update:(id)data except:(NSString *)exceptList;
+
 + (void)setDateFormatter:(NSDateFormatter *)dateFormatter forProperty:(NSString *)property;
 + (NSDateFormatter *)dateFormatterForProperty:(NSString *)property;
 

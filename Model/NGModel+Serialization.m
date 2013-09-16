@@ -7,41 +7,55 @@
 //
 
 #import "NGModel+Serialization.h"
-#import "NSObject+Properties.h"
+#import "NGModel+Helpers.h"
 
-@interface NSObject(PrimitiveClasses)
-- (BOOL)isPrimitiveClass;
-@end
-
-@implementation NSObject(PrimitiveClasses)
-
-
-- (BOOL)isPrimitiveClass {
-    static NSArray *primitiveClasses;
-    if (primitiveClasses == nil) {
-        primitiveClasses = @[NSString.class,NSNumber.class,NSNull.class];
-    }
-    for (Class class in primitiveClasses) {
-        if ([self isKindOfClass:class]) {
-            return YES;
-        }
-    }
-    return NO;
-}
-
-@end
+typedef BOOL (^NGPropertyAppearanceBlock)(NSString *propertyName);
 
 @implementation NGModel(Serialization)
 
-- (id)serialize {
-    return [self serializeAsDictionary];
++ (NSArray *)splitPropertiesFromString:(NSString *)propertyList {
+    NSArray *splitPropertyList = [propertyList componentsSeparatedByString:@","];
+
+    return splitPropertyList;
 }
 
-- (id)serializeAsDictionary {
++ (NGPropertyAppearanceBlock)onlyAppearanceBlockForList:(NSString *)propertyList {
+    NSArray *splitList = [self splitPropertiesFromString:propertyList];
+
+    return (NGPropertyAppearanceBlock)(^BOOL(NSString *propertyName) {
+        return [splitList containsObject:propertyName];
+    });
+}
+
++ (NGPropertyAppearanceBlock)exceptAppearanceBlockForList:(NSString *)propertyList {
+    NSArray *splitList = [self splitPropertiesFromString:propertyList];
     
+    return (NGPropertyAppearanceBlock)(^BOOL(NSString *propertyName) {
+        return ![splitList containsObject:propertyName];
+    });
+}
+
+- (id)serialize {
+    return [self serializeUsingPropertyAppearanceBlock:nil];
+}
+
+- (id)serializeOnly:(NSString *)onlyList {
+    return [self serializeUsingPropertyAppearanceBlock:[self.class onlyAppearanceBlockForList:onlyList]];
+}
+
+- (id)serializeExcept:(NSString *)exceptList {
+    return [self serializeUsingPropertyAppearanceBlock:[self.class exceptAppearanceBlockForList:exceptList]];
+}
+
+- (id)serializeUsingPropertyAppearanceBlock:(NGPropertyAppearanceBlock)appearanceBlock {
     NSMutableDictionary *result = [NSMutableDictionary dictionary];
     
-    for (NGProperty *property in self.properties) {
+    for (NGProperty *property in self.allProperties) {
+        
+        if (appearanceBlock && appearanceBlock(property.name) == NO) {
+            continue;
+        }
+        
         id value = [property valueOnObject:self];
         
         if ([property.typeClass isSubclassOfClass:NGModel.class]) {
@@ -64,15 +78,26 @@
 }
 
 + (id)create:(id)data {
-    return [self createFromDictionary:data];
+    return [self create:data withAppearanceBlock:nil];
 }
 
-+ (id)createFromDictionary:(NSDictionary *)dictionary {
++ (id)create:(id)data only:(NSString *)onlyList {
+    return [self create:data withAppearanceBlock:[self onlyAppearanceBlockForList:onlyList]];
+}
+
++ (id)create:(id)data except:(NSString *)exceptList {
+    return [self create:data withAppearanceBlock:[self onlyAppearanceBlockForList:exceptList]];
+}
+
++ (id)create:(id)data withAppearanceBlock:(NGPropertyAppearanceBlock)appearanceBlock {
     NGModel *object = [self new];
     
-    for (NGProperty *property in self.properties) {
+    for (NGProperty *property in self.allProperties) {
+        if (appearanceBlock && appearanceBlock(property.name) == NO) {
+            continue;
+        }
         
-        id value = dictionary[property.name];
+        id value = data[property.name];
         
         if (value == nil) {
             continue;
@@ -82,7 +107,7 @@
             value = nil;
         } else if ([value isKindOfClass:NSDictionary.class]) {
             // OBJECT
-            value = [property.typeClass createFromDictionary:value];
+            value = [property.typeClass create:value];
         } else if ([value isKindOfClass:NSArray.class]) {
             // ARRAY
             
@@ -90,7 +115,7 @@
                 Class objectClass = NSClassFromString([property.name substringToIndex:property.name.length - 1]);
                 NSMutableArray *array = [NSMutableArray arrayWithCapacity:[value count]];
                 for (int i = 0; i < [value count]; ++i) {
-                    array[i] = [objectClass createFromDictionary:value[i]];
+                    array[i] = [objectClass create:value[i]];
                 }
                 value = array;
             }
@@ -107,6 +132,7 @@
     }
     return object;
 }
+
 
 static NSMutableDictionary *dateFormatters;
 

@@ -7,6 +7,28 @@
 //
 
 #import "NGModel+Helpers.h"
+#import "NGModel.h"
+
+@implementation NGModel(Helpers)
+
+- (NSArray *)allProperties {
+    return [self.class allProperties];
+}
+
++ (NSArray *)allProperties {
+    NSMutableArray *result = (NSMutableArray *)[self properties];
+    
+    Class parentClass = self.superclass;
+    
+    while (parentClass != NGModel.class) {
+        [result addObjectsFromArray:[parentClass properties]];
+        parentClass = parentClass.superclass;
+    }
+    
+    return result;
+}
+
+@end
 
 @implementation NSString(Helpers)
 
