@@ -18,3 +18,7 @@
 - (NSString *)capitalizedFirstLetter;
 + (NSString *)randomStringOfLength:(int)length;
 @end
+
+@interface NSDictionary (Utils)
+- (NSMutableDictionary *)merge:(NSDictionary *)dict;
+@end

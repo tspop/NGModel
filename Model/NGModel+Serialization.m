@@ -14,8 +14,12 @@ typedef BOOL (^NGPropertyAppearanceBlock)(NSString *propertyName);
 @implementation NGModel(Serialization)
 
 + (NSArray *)splitPropertiesFromString:(NSString *)propertyList {
-    NSArray *splitPropertyList = [propertyList componentsSeparatedByString:@","];
+    NSMutableArray *splitPropertyList = [propertyList componentsSeparatedByString:@","].mutableCopy;
 
+    for (int i = 0;i < splitPropertyList.count; ++i) {
+        splitPropertyList[i] = [splitPropertyList[i] stringByReplacingOccurrencesOfString:@" " withString:@""];
+    }
+    
     return splitPropertyList;
 }
 
@@ -58,6 +62,13 @@ typedef BOOL (^NGPropertyAppearanceBlock)(NSString *propertyName);
         
         id value = [property valueOnObject:self];
         
+        NGSerializationRuleBlock rule = [self.class classMappings][property.type];
+        if (rule) {
+            value = rule(value);
+            result[property.name] = value;
+            continue;
+        }
+        
         if ([property.typeClass isSubclassOfClass:NGModel.class]) {
             //OBJECT
         } else if ([property.typeClass isSubclassOfClass:NSArray.class]) {
@@ -89,6 +100,10 @@ typedef BOOL (^NGPropertyAppearanceBlock)(NSString *propertyName);
     return [self create:data withAppearanceBlock:[self onlyAppearanceBlockForList:exceptList]];
 }
 
++ (void)initMappings {
+
+}
+
 + (id)create:(id)data withAppearanceBlock:(NGPropertyAppearanceBlock)appearanceBlock {
     NGModel *object = [self new];
     
@@ -102,6 +117,8 @@ typedef BOOL (^NGPropertyAppearanceBlock)(NSString *propertyName);
         if (value == nil) {
             continue;
         }
+        
+        
         
         if (value == [NSNull null]) {
             value = nil;
@@ -149,6 +166,29 @@ static NSMutableDictionary *dateFormatters;
         dateFormatters[self.className] = [NSMutableDictionary new];
     }
     dateFormatters[self.className][property] = dateFormatter;
+}
+
+#pragma mark - Mapping
+
+
+static char *kMappingsKey;
+
++ (NSMutableDictionary *)classMappings {
+    
+    NSMutableDictionary *dictionary = objc_getAssociatedObject(self, kMappingsKey);
+    
+    if (dictionary == nil) {
+        dictionary = [NSMutableDictionary dictionary];
+        objc_setAssociatedObject(self, kMappingsKey, dictionary, OBJC_ASSOCIATION_RETAIN);
+        [self initMappings];
+    }
+    return dictionary;
+}
+
++ (void)mapClassToValue:(Class)class withRule:(NGSerializationRuleBlock)block {
+    
+    [self classMappings][NSStringFromClass(class)] = block;
+    
 }
 
 @end

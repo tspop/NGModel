@@ -8,6 +8,8 @@
 
 #import "NGModel.h"
 
+typedef id (^NGSerializationRuleBlock)(id value);
+
 @interface NGModel(Serialization)
 
 - (id)serialize;
@@ -34,8 +36,10 @@
 
 // PROPERTY VALUE MAPPING
 
++ (void)mapPropertyToValue:(NSString *)property withRule:(NGSerializationRuleBlock)block;
 
 // CLASS VALUE MAPPING
-+ (void)mapClass:(Class)class toString:(NSString *)string;
++ (void)initMappings;
++ (void)mapClassToValue:(Class)class withRule:(NGSerializationRuleBlock)block;
 
 @end

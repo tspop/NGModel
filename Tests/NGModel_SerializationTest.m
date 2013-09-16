@@ -12,6 +12,7 @@
 #import "NGModel+Serialization.h"
 #import "SimpleModel.h"
 #import "Duck.h"
+#import "MetaSplunge.h"
 
 @interface NGModel_SerializationTest : GHTestCase
 @end
@@ -105,6 +106,32 @@
     GHAssertEquals(dictionary.allKeys.count, 1u, nil);
 }
 
+- (void)testMapClass {
+    Splunge *splunge = [Splunge new];
+    
+    splunge.color = [UIColor redColor];
+    splunge.fourthColor = [UIColor greenColor];
+    
+    splunge.vaginaColor = [UIColor purpleColor];
+    splunge.isInfected = YES;
+    
+    NSDictionary *dictionary = [splunge serialize];
+    
+    GHAssertEqualStrings(@"1.0 0.0 0.0", dictionary[@"color"], nil);
+}
+
+- (void)testMappingInheritance {
+    MetaSplunge *splunge = [MetaSplunge new];
+    splunge.color = [UIColor redColor];
+    splunge.view = [[UIView alloc] init];
+    
+    NSDictionary *dictionary = [splunge serialize];
+    
+    NSLog(@"%@",[splunge description]);
+    
+    GHAssertEqualStrings(dictionary[@"color"], @"1.0 0.0 0.0", nil);
+    GHAssertEqualStrings(dictionary[@"view"], NSStringFromCGRect(CGRectZero), nil);
+}
 
 
 @end

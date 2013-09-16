@@ -61,6 +61,8 @@
 		1BF80641F3BB42E5AE108C84 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0825BB798D464C48B2F67588 /* libPods.a */; };
 		7D1A6155B93543DE8AB3679E /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEBA820A4D94A1CB33692AC /* libPods-Tests.a */; };
 		A18B0E9217E1D69E00ADAAA8 /* NGValidationError.m in Sources */ = {isa = PBXBuildFile; fileRef = A18B0E9117E1D69E00ADAAA8 /* NGValidationError.m */; };
+		A18B0E9817E7967500ADAAA8 /* Splunge.m in Sources */ = {isa = PBXBuildFile; fileRef = A18B0E9717E7967500ADAAA8 /* Splunge.m */; };
+		A18B0E9B17E7A18B00ADAAA8 /* MetaSplunge.m in Sources */ = {isa = PBXBuildFile; fileRef = A18B0E9A17E7A18B00ADAAA8 /* MetaSplunge.m */; };
 		A1D51A5617E06FCC00D54944 /* SerializationObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A5517E06FCC00D54944 /* SerializationObject.m */; };
 		A1D51A5A17E0749400D54944 /* NGModel+Instantation.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A5917E0749400D54944 /* NGModel+Instantation.m */; };
 		A1D51A5F17E07AD300D54944 /* NGDataGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D51A5E17E07AD300D54944 /* NGDataGenerator.m */; };
@@ -137,6 +139,10 @@
 		89AA8B8B9D38421BABC55750 /* Pods-Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.xcconfig"; path = "Pods/Pods-Tests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		A18B0E9017E1D69E00ADAAA8 /* NGValidationError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGValidationError.h; sourceTree = "<group>"; };
 		A18B0E9117E1D69E00ADAAA8 /* NGValidationError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGValidationError.m; sourceTree = "<group>"; };
+		A18B0E9617E7967500ADAAA8 /* Splunge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Splunge.h; sourceTree = "<group>"; };
+		A18B0E9717E7967500ADAAA8 /* Splunge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Splunge.m; sourceTree = "<group>"; };
+		A18B0E9917E7A18B00ADAAA8 /* MetaSplunge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetaSplunge.h; sourceTree = "<group>"; };
+		A18B0E9A17E7A18B00ADAAA8 /* MetaSplunge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetaSplunge.m; sourceTree = "<group>"; };
 		A1D51A5417E06FCC00D54944 /* SerializationObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SerializationObject.h; sourceTree = "<group>"; };
 		A1D51A5517E06FCC00D54944 /* SerializationObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SerializationObject.m; sourceTree = "<group>"; };
 		A1D51A5817E0749400D54944 /* NGModel+Instantation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NGModel+Instantation.h"; sourceTree = "<group>"; };
@@ -392,6 +398,10 @@
 				12AD6F0917E736CF0035F24E /* Animal */,
 				12AD6F0417E7155C0035F24E /* SimpleModel.h */,
 				12AD6F0517E7155C0035F24E /* SimpleModel.m */,
+				A18B0E9617E7967500ADAAA8 /* Splunge.h */,
+				A18B0E9717E7967500ADAAA8 /* Splunge.m */,
+				A18B0E9917E7A18B00ADAAA8 /* MetaSplunge.h */,
+				A18B0E9A17E7A18B00ADAAA8 /* MetaSplunge.m */,
 			);
 			name = TestModels;
 			sourceTree = "<group>";
@@ -716,8 +726,10 @@
 				12AD6EF417E7140E0035F24E /* NGModel_SerializationTest.m in Sources */,
 				12AD6EF517E714340035F24E /* NGModel.m in Sources */,
 				12AD6EF617E714370035F24E /* NGModel+Serialization.m in Sources */,
+				A18B0E9B17E7A18B00ADAAA8 /* MetaSplunge.m in Sources */,
 				12AD6EF717E7145E0035F24E /* NGModel+Validations.m in Sources */,
 				12AD6EF817E714630035F24E /* NGRequiredValidation.m in Sources */,
+				A18B0E9817E7967500ADAAA8 /* Splunge.m in Sources */,
 				12AD6EF917E714780035F24E /* NGModel+Helpers.m in Sources */,
 				12AD6EFA17E7147B0035F24E /* NGModel+Caching.m in Sources */,
 				12AD6EFB17E7147E0035F24E /* NSObject+Properties.m in Sources */,
